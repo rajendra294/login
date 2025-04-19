@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="login-container">
+    <form id="registerForm">
+      <h2>Register</h2>
+
+      <div class="form-group">
+        <label for="regName">Name</label>
+        <input type="text" id="regName" required />
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" required />
+        <small class="error" id="regEmailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="regPassword">Password</label>
+        <input type="password" id="regPassword" required />
+        <small class="error" id="regPasswordError"></small>
+        <small class="hint">
+          Password must be at least 6 characters and include uppercase, lowercase, number, and special character.
+        </small>
+      </div>
+
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="index.html">Login</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
